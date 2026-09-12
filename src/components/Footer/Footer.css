@@ -1,0 +1,163 @@
+.site-footer {
+  background-color: #242321;
+  color: #f5ead7;
+  padding: 50px 0 25px;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Logo */
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+/* Navigation */
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.footer-links a {
+  color: #f5ead7;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+/* Social */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 35px;
+  border-left: 1px solid rgba(245, 234, 215, 0.3);
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: white;
+  font-size: 21px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+/* Bottom */
+
+.footer-bottom {
+  margin-top: 45px;
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(245, 234, 215, 0.2);
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(245, 234, 215, 0.85);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 28px;
+  }
+
+  .footer-social {
+    padding-left: 0;
+    padding-top: 25px;
+    border-left: none;
+    border-top: 1px solid rgba(245, 234, 215, 0.3);
+  }
+}
+
+@media (max-width: 500px) {
+  .site-footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-logo {
+    width: 170px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+  }
+}

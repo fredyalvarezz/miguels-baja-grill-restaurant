@@ -1,0 +1,7 @@
+.final-cta{
+  background:var(--black);
+  color:var(--white);text-align:center;padding:64px 0;
+}
+.final-cta h2{font-size:clamp(1.6rem,3.2vw,2.2rem);color:var(--white);}
+.final-cta p{margin-top:12px;color:#c9c4bb;font-size:1rem;}
+.final-cta-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px;}

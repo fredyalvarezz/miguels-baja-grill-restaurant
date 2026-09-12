@@ -1,0 +1,17 @@
+:root{
+  --black:#1c1c1c;
+  --ink:#3a352f;
+  --ink-muted:#726b60;
+  --cream:#faf7f2;
+  --white:#ffffff;
+  --border:#e6ded0;
+  --accent:#b7472a;       /* terracota - único color de acento */
+  --accent-dark:#8f3720;
+
+  --radius:10px;
+  --shadow:0 6px 20px rgba(28,28,28,0.08);
+  --ease:cubic-bezier(.22,1,.36,1);
+
+  --font-display:'Fraunces', Georgia, serif;
+  --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
