@@ -1,17 +1,17 @@
 .site-footer {
   background-color: #242321;
   color: #f5ead7;
-  padding: 50px 0 25px;
+  padding: 30px 0 15px;
 }
 
 .footer-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 25px;
 }
 
-/* Logo */
+
 
 .footer-brand {
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .footer-logo {
-  width: 190px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -29,13 +29,13 @@
 .footer-links {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
 }
 
 .footer-links a {
   color: #f5ead7;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   transition: opacity 0.2s ease;
 }
 
@@ -46,7 +46,7 @@
 .footer-phone {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 7px;
 }
 
 /* Social */
@@ -54,14 +54,14 @@
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding-left: 35px;
+  gap: 12px;
+  padding-left: 25px;
   border-left: 1px solid rgba(245, 234, 215, 0.3);
 }
 
 .social-link {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
 
   display: flex;
   align-items: center;
@@ -70,7 +70,7 @@
   border-radius: 50%;
 
   color: white;
-  font-size: 21px;
+  font-size: 18px;
 
   text-decoration: none;
 
@@ -103,11 +103,11 @@
   );
 }
 
-/* Bottom */
+
 
 .footer-bottom {
-  margin-top: 45px;
-  padding-top: 25px;
+  margin-top: 25px;
+  padding-top: 15px;
 
   border-top: 1px solid rgba(245, 234, 215, 0.2);
 
@@ -115,9 +115,9 @@
 }
 
 .footer-bottom p {
-  margin: 8px 0;
-  font-size: 14px;
-  line-height: 1.6;
+  margin: 5px 0;
+  font-size: 12px;
+  line-height: 1.5;
   color: rgba(245, 234, 215, 0.85);
 }
 
@@ -127,17 +127,18 @@
   .footer-inner {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
   }
 
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 28px;
+    gap: 15px 22px;
   }
 
   .footer-social {
     padding-left: 0;
-    padding-top: 25px;
+    padding-top: 15px;
     border-left: none;
     border-top: 1px solid rgba(245, 234, 215, 0.3);
   }
@@ -145,19 +146,19 @@
 
 @media (max-width: 500px) {
   .site-footer {
-    padding: 40px 20px 20px;
+    padding: 25px 20px 15px;
   }
 
   .footer-logo {
-    width: 170px;
+    width: 140px;
   }
 
   .footer-links {
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
   }
 
   .footer-bottom p {
-    font-size: 13px;
+    font-size: 11px;
   }
 }

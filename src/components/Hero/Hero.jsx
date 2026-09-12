@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const PHONE = '+14352596546';
@@ -16,7 +17,7 @@ export default function Hero() {
           </p>
           <p className="hero-sub">Best Fish Tacos and Best Margaritas at town.</p>
           <div className="hero-cta">
-            <a href="#menu" className="btn btn-primary">View Menu</a>
+            <Link to="/menu" className="btn btn-primary">View Menu</Link>
             <a href={`tel:${PHONE}`} className="btn btn-outline">Call Now</a>
             <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               Get Directions

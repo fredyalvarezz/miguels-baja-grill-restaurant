@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const PHONE = '+14352596546';
@@ -7,10 +8,10 @@ const MAPS_URL =
   'https://www.google.com/maps/dir/?api=1&destination=51+North+Main+Street+Moab+UT+84532';
 
 const NAV_LINKS = [
-  { href: '#about', label: 'About' },
-  { href: '#menu', label: 'Menu' },
-  { href: '#location', label: 'Location' },
- 
+  { to: '/about', label: 'About' },
+  { to: '/menu', label: 'Menu' },
+  { to: '/margaritas', label: 'Margaritas' },
+  { to: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -19,11 +20,11 @@ export default function Header() {
   return (
     <nav className="navbar">
       <div className="nav-inner">
-        <a href="#top" className="nav-brand">Miguel's Baja Grill</a>
+        <Link to="/" className="nav-brand">Miguel's Baja Grill</Link>
 
         <div className="nav-links">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href}>{link.label}</a>
+            <Link key={link.to} to={link.to}>{link.label}</Link>
           ))}
         </div>
 
@@ -48,9 +49,9 @@ export default function Header() {
       <div className={`mobile-menu ${open ? 'open' : ''}`}>
         <div className="mobile-menu-inner">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.to} to={link.to} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
           <a href={`tel:${PHONE}`} onClick={() => setOpen(false)}>
             Call {PHONE_DISPLAY}

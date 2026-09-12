@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaPhone } from 'react-icons/fa';
 
@@ -33,9 +34,10 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav className="footer-links">
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#location">Location</a>
+            <Link to="/about">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/margaritas">Margaritas</Link>
+            <Link to="/contact">Contact</Link>
 
             <a href={`tel:${PHONE}`} className="footer-phone">
               <FaPhone />
