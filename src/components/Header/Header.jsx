@@ -10,7 +10,7 @@ const MAPS_URL =
 const NAV_LINKS = [
   { to: '/about', label: 'About' },
   { to: '/menu', label: 'Menu' },
-  { to: '/margaritas', label: 'Margaritas' },
+  { to: '/drinkmenu', label: 'Drink Menu' },
   { to: '/contact', label: 'Contact' },
 ];
 

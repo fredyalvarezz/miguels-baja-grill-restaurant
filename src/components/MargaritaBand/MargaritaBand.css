@@ -58,6 +58,91 @@
   object-fit: cover;
 }
 
+.margarita-drinks {
+  padding-top: 56px;
+  margin-top: 56px;
+  border-top: 1px solid var(--border);
+}
+
+.menu-subheading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--black);
+  margin: 0 0 8px;
+}
+
+.menu-subheading-sm {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--black);
+  margin: 28px 0 6px;
+}
+
+.menu-subnote {
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+  margin-bottom: 18px;
+}
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.drink-grid-compact {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.drink-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.drink-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+}
+
+.drink-item-head strong {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--black);
+}
+
+.drink-item-head span {
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.drink-item p {
+  color: var(--ink-muted);
+  font-size: 0.84rem;
+  margin-top: 6px;
+}
+
+.menu-note {
+  margin-top: 28px;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 @media (max-width:900px) {
   .margarita-inner {
     grid-template-columns: 1fr;

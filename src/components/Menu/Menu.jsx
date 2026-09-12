@@ -105,14 +105,13 @@ const SALADS = [
 ];
 
 const SEAFOOD_DINNERS = [
-
   {
     name: 'Mariscos A La Paz',
     price: '$31.99',
     desc: 'Large deep sea scallops, shrimp, Mahi-Mahi and baby clams in a tomato-based sauce with onions, green peppers, tomato, garlic and chile de árbol.',
     image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/7a/a4/e6/photo0jpg.jpg?w=1100&h=-1&s=1',
   },
-    {
+  {
     name: 'Shrimp',
     price: '$27.99',
     desc: 'Ajillo: sauteed with butter, elephant garlic and guajillo chiles, Garlic: sauteed in butter and garlic, Grilled: grilled over an open-flame and basted in garlic and lime, Lime-tequila: sauteed in butter with lime juice, onions, cilantro, chile de arbol and tequila, Ranchero: a tomato-based sauce with onion, green pepper and green olives',
@@ -248,19 +247,6 @@ const MOAB_BURRITOS = [
     image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/94/46/eb/photo1jpg.jpg?w=800&h=-1&s=1',
   },
 ];
-const WINES = [
-  { name: 'Los Cardos Malbec, Argentina', price: 'Glass $7.00 · Bottle $30.00', desc: 'Spicy and rich with juicy, fresh black fruit and a long jammy finish.' },
-  { name: 'Heron Wines Chardonnay, California', price: 'Glass $7.00 · Bottle $30.00', desc: 'Aromas of pear, peach and citrus, followed by a light toasted-vanilla finish.' },
-  { name: 'Heron Wines Pinot Noir, California', price: 'Glass $7.25 · Bottle $31.00', desc: 'Red cherry, tart cranberry, spicy vanilla and a slightly earthy background.' },
-];
-
-const SHOOTERS = [
-  { name: 'Don Julio Añejo', price: '$8.75' },
-  { name: 'Sauza Hornitos Reposado', price: '$5.50' },
-  { name: 'Patrón Silver', price: '$8.25' },
-  { name: 'Montezuma Gold', price: '$4.00' },
-];
-
 
 function FoodCard({ item }) {
   return (
@@ -317,8 +303,6 @@ export default function Menu() {
           </p>
         </div>
 
-      
-
         <MenuCategory title="Appetizers" items={APPETIZERS} />
 
         <MenuCategory
@@ -351,44 +335,6 @@ export default function Menu() {
           subnote="Choose from our homemade dressings: lime-cilantro or mango-miso. Add avocado to any salad for $1.99 · Add cheese to any salad for $1.99."
           items={SALADS}
         />
-
-        <h3 className="menu-subheading">Drink Menu</h3>
-        <p className="menu-subnote">Wine · corking fee $10.00</p>
-        <div className="drink-grid">
-          {WINES.map((w) => (
-            <div className="drink-item" key={w.name}>
-              <div className="drink-item-head">
-                <strong>{w.name}</strong>
-                <span>{w.price}</span>
-              </div>
-              <p>{w.desc}</p>
-            </div>
-          ))}
-        </div>
-
-        <h4 className="menu-subheading-sm">Shooters · 1 oz.</h4>
-        <p className="menu-subnote">
-          Tequila is Mexico's national spirit, made from fermenting the sugars of the Blue Agave
-          plant. It must be produced within designated regions of Mexico, mostly in the state of
-          Jalisco.
-        </p>
-        <div className="drink-grid drink-grid-compact">
-          {SHOOTERS.map((s) => (
-            <div className="drink-item" key={s.name}>
-              <div className="drink-item-head">
-                <strong>{s.name}</strong>
-                <span>{s.price}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="menu-note">
-          Please be prepared to show ID if ordering any alcoholic beverage. Utah liquor law
-          states: "A full-service restaurant may not sell, offer for sale, or furnish an
-          alcoholic product except in connection with an order for food prepared, sold, and
-          furnished at the licensed premises." Your server will be happy to explain further.
-        </div>
       </div>
     </section>
   );

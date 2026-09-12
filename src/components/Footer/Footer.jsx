@@ -36,7 +36,7 @@ export default function Footer() {
           <nav className="footer-links">
             <Link to="/about">About</Link>
             <Link to="/menu">Menu</Link>
-            <Link to="/margaritas">Margaritas</Link>
+            <Link to="/drinkmenu">Drink Menu</Link>
             <Link to="/contact">Contact</Link>
 
             <a href={`tel:${PHONE}`} className="footer-phone">
