@@ -47,6 +47,17 @@ Lunes a domingo · 5:00 pm – 9:00 pm
 **Teléfono:**  
 (435) 259-6546
 
+🎯 Objetivo del proyecto
+
+El objetivo de este proyecto fue crear una landing page moderna, sencilla y responsive para un restaurante real, priorizando:
+
+Experiencia de usuario.
+Diseño responsive.
+Presentación clara de información.
+Navegación sencilla.
+Acceso rápido al menú, ubicación y contacto.
+Implementación de una interfaz utilizando React.
+
 
 👤 Autor
 
